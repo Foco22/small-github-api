@@ -39,20 +39,3 @@ def calculate_sum(numbers: NumbersInput):
         second_number=numbers.second_number,
         sum=result
     )
-
-@app.post("/api/subtract", response_model=SumResponse)
-def calculate_subtract(numbers: NumbersInput):
-    """
-    Calculate the subtraction of two numbers.
-
-    - **first_number**: The first number to subtract
-    - **second_number**: The second number to subtract
-
-    Returns a JSON response with both input numbers and their subtraction.
-    """
-    result = numbers.first_number - numbers.second_number
-    return SumResponse(
-        first_number=numbers.first_number,
-        second_number=numbers.second_number,
-        subtract=result
-    )
