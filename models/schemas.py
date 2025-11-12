@@ -35,3 +35,22 @@ class SumResponse(BaseModel):
             ]
         }
     }
+
+
+class SubtractResponse(BaseModel):
+    """Response model for subtract calculation"""
+    first_number: float = Field(..., description="The first number (minuend)")
+    second_number: float = Field(..., description="The second number (subtrahend)")
+    difference: float = Field(..., description="The result of the subtraction")
+
+    model_config = {
+        "json_schema_extra": {
+            "examples": [
+                {
+                    "first_number": 10.0,
+                    "second_number": 3.0,
+                    "difference": 7.0
+                }
+            ]
+        }
+    }
