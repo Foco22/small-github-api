@@ -14,6 +14,7 @@ def test_sum():
         assert response.status_code == 200
         data = response.json()
         assert data["sum"] == 13 or data.get("result") == 13
+<<<<<<< HEAD
 
 def test_subtract():
     """Test the subtract endpoint"""
@@ -25,3 +26,5 @@ def test_subtract():
         assert response.status_code == 200
         data = response.json()
         assert data["difference"] == 7 or data.get("result") == 7
+=======
+>>>>>>> main
