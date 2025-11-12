@@ -26,3 +26,23 @@ Calculate the sum of two numbers.
   "sum": 8
 }
 ```
+
+### POST /api/subtract
+Calculate the difference of two numbers.
+
+**Request body:**
+```json
+{
+  "first_number": 10,
+  "second_number": 3
+}
+```
+
+**Response:**
+```json
+{
+  "first_number": 10,
+  "second_number": 3,
+  "difference": 7
+}
+```
