@@ -2,13 +2,8 @@ from fastapi import FastAPI
 from models import NumbersInput, SumResponse, SubtractResponse
 
 app = FastAPI(
-<<<<<<< HEAD
     title="Operations Calculator API",
     description="API to calculate mathematical operations with two numbers",
-=======
-    title="Calculator API",
-    description="API to calculate operations of two numbers",
->>>>>>> main
     version="1.0.0"
 )
 
